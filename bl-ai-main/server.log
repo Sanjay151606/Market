@@ -1,0 +1,43 @@
+nohup: ignoring input
+✅ MarketMind AI Server running on http://localhost:8000
+📡 Real-time updates enabled via WebSocket
+📝 Registering user: test@marketmind.com
+❌ Auth creation failed: A user with this email address has already been registered
+🔐 Login attempt: test@marketmind.com
+✅ Login successful
+❌ Token Verification Error: jwt malformed
+New client connected: G_HJkFuz1mlY5U2aAAAC
+New client connected: jkmG-aKEAQHE7s5oAAAD
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+Client disconnected: G_HJkFuz1mlY5U2aAAAC
+Client disconnected: jkmG-aKEAQHE7s5oAAAD
+New client connected: 2n_am_0mq3wLJB-aAAAG
+New client connected: JvsHtrmuTQxxKO6MAAAH
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+Client disconnected: 2n_am_0mq3wLJB-aAAAG
+Client disconnected: JvsHtrmuTQxxKO6MAAAH
+New client connected: GBE13GzJrnuVIjhoAAAK
+New client connected: ETpXJ2ibpzohLVP0AAAL
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+Client disconnected: GBE13GzJrnuVIjhoAAAK
+Client disconnected: ETpXJ2ibpzohLVP0AAAL
+New client connected: mKSdbMlufZh4BB0QAAAO
+New client connected: LeqfyoyHXlWmfyKhAAAP
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+Client disconnected: mKSdbMlufZh4BB0QAAAO
+Client disconnected: LeqfyoyHXlWmfyKhAAAP
+New client connected: 3PA0roMZoHaQkVNHAAAS
+New client connected: mz_Xjn12gWy_cKtTAAAT
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+Client disconnected: 3PA0roMZoHaQkVNHAAAS
+Client disconnected: mz_Xjn12gWy_cKtTAAAT
+New client connected: Gm0j3kiB5GArEfAgAAAW
+New client connected: 05QfPoSryudORLpaAAAX
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+User 91acdded-5289-4323-8385-fbd6cf3946e4 joined their room
+🔄 Running scheduled sheet analysis...

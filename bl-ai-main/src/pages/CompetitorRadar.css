@@ -1,0 +1,60 @@
+.competitor-radar {
+  animation: fadeIn 0.3s ease;
+}
+
+.state-card {
+  text-align: center;
+  padding: 36px;
+  color: #6b7280;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.state-card.compact {
+  padding: 24px;
+}
+
+.simple-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 840px;
+}
+
+.simple-table thead th {
+  background: #f8f9fc;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.simple-table tbody td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.simple-table tbody tr:hover {
+  background: #f8f9fc;
+}
+
+.competitor-table-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.competitor-table {
+  overflow-x: auto;
+}

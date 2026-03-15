@@ -1,0 +1,262 @@
+.layout-shell {
+  min-height: 100vh;
+  display: flex;
+  background: #eaf2f9;
+}
+
+.shell-sidebar {
+  width: 250px;
+  background: #0e5b81;
+  color: #f5fbff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 20;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.shell-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+}
+
+.brand-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f4fbff;
+  color: #0e5b81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.brand-text strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.shell-nav {
+  padding: 10px 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.shell-nav-item {
+  text-decoration: none;
+  color: rgba(239, 249, 255, 0.88);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.shell-nav-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.shell-nav-item.active {
+  background: #ffffff;
+  color: #0e5b81;
+  font-weight: 600;
+}
+
+.shell-footer {
+  padding: 12px 10px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.shell-footer-item {
+  border: none;
+  background: transparent;
+  color: rgba(239, 249, 255, 0.9);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.shell-footer-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.shell-footer-item.logout {
+  cursor: pointer;
+}
+
+.shell-main {
+  flex: 1;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.shell-header {
+  height: 70px;
+  background: #dfeaf3;
+  border-bottom: 1px solid #cfdee9;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 18px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.shell-menu-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #c5d8e5;
+  background: #f6fbff;
+  color: #0e5b81;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.shell-search {
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.shell-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #84a0b2;
+}
+
+.shell-search-input {
+  width: 100%;
+  border: 1px solid #c6d6e3;
+  background: #f8fcff;
+  border-radius: 8px;
+  height: 34px;
+  padding: 0 10px 0 30px;
+  font-size: 12px;
+  color: #33556b;
+}
+
+.shell-search-input:focus {
+  outline: none;
+  border-color: #7ea4bf;
+}
+
+.shell-user {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shell-user-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #5f788b;
+}
+
+.shell-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #b9ccdb;
+  color: #0e5b81;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.shell-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.shell-overlay {
+  display: none;
+}
+
+.shell-mobile-bottom {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .shell-menu-btn {
+    display: flex;
+  }
+
+  .shell-sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .shell-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .shell-main {
+    margin-left: 0;
+  }
+
+  .shell-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    border: none;
+    background: rgba(5, 20, 30, 0.35);
+    z-index: 15;
+  }
+
+  .shell-search {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .shell-header {
+    padding: 0 12px;
+    gap: 10px;
+  }
+
+  .shell-user-label {
+    display: none;
+  }
+
+  .shell-content {
+    padding: 14px;
+  }
+
+  .shell-mobile-bottom {
+    display: none;
+  }
+}

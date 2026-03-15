@@ -1,0 +1,62 @@
+.insights-feed {
+  animation: fadeIn 0.3s ease;
+}
+
+.feed-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-buttons button:hover {
+  background: #f8f9fc;
+  border-color: #cbd5e1;
+}
+
+.filter-buttons button.active {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+.insights-count {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+  padding: 10px 16px;
+  background: #f8f9fc;
+  border-radius: 8px;
+}
+
+.insights-feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .insights-feed-grid {
+    grid-template-columns: 1fr;
+  }
+}

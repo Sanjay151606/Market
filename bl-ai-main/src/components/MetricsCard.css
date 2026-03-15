@@ -1,0 +1,65 @@
+.metrics-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  border: 1px solid #d1dfeb;
+  transition: all 0.2s ease;
+}
+
+.metrics-card:hover {
+  box-shadow: 0 1px 6px rgba(17, 62, 88, 0.08);
+}
+
+.metrics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.metrics-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metrics-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+.metrics-change {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+.metrics-change.positive {
+  color: #10b981;
+  background: #d1fae5;
+}
+
+.metrics-change.negative {
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+.metrics-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #29506a;
+  margin-bottom: 1px;
+  line-height: 1.1;
+}
+
+.metrics-title {
+  font-size: 10px;
+  color: #8198aa;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+# MarketMind AI - Project Documentation & System Configuration
+Date: March 14, 2026
+
+## 1. Project Overview
+MarketMind AI is a professional marketplace intelligence platform designed for company owners to connect their inventory and warehouse data (via Google Sheets) for automated AI analysis and business optimization.
+
+## 2. Professional Setup (Link-Only Flow)
+The system uses a "Service Account" architecture, allowing users to link their spreadsheets without complex OAuth login screens.
+
+### 🔌 Connectivity Details
+*   **Backend**: Node.js / Express (Port 8000)
+*   **Frontend**: React / Vite (Port 5173)
+*   **Database**: Supabase PostgreSQL (Real-time enabled)
+*   **Google Integration**: Service Account (JWT Authentication)
+*   **Service Account Email**: sheets-bot@sheets-api-project-490206.iam.gserviceaccount.com
+
+## 3. Core Workflow
+1.  **User Onboarding**: User registers/logs in to the MarketMind AI platform.
+2.  **Sheet Linking**: User provides their Google Sheet URL in Profile Settings.
+3.  **Permission Step**: User shares their private sheet with the Service Account email as an "Editor".
+4.  **Auto-Configuration**: The app automatically creates "Business Data" and "Analysis Results" tabs in the user's sheet with pre-defined headers.
+5.  **Data Ingestion**: User enters warehouse data (Sales, Inventory, Pricing) into the sheet.
+6.  **AI Analysis**: The platform fetches real data, processes it via the Analysis Engine, and generates insights.
+7.  **Optimization Output**: AI insights are written back to the Google Sheet and displayed on the Dashboard in INR (₹).
+
+## 4. Key Features
+*   **Inventory Intelligence**: Real-time tracking of warehouse stock levels and automated reorder alerts.
+*   **Sales Performance Analysis**: Trends, top-selling products, and revenue growth tracking.
+*   **Pricing Optimization**: Competitive price analysis and dynamic markup recommendations.
+*   **INR Currency Support**: All financial metrics are localized for the Indian market (₹).
+*   **Real-time Dashboard**: Live metrics for "Est. Revenue Opportunity" and "Active AI Insights".
+*   **Automated Profiles**: One-click profile sync ensuring database integrity for new users.
+
+## 5. Environment Configuration (.env)
+The system requires the following keys to function in "Pro" mode:
+*   `GOOGLE_SERVICE_ACCOUNT_EMAIL`: The bot identity.
+*   `GOOGLE_SERVICE_ACCOUNT_KEY`: The RSA private key for writing to sheets.
+*   `VITE_SUPABASE_URL` & `VITE_SUPABASE_ANON_KEY`: Database connection.
+*   `JWT_SECRET`: For secure user session management.
+
+---
+MarketMind AI - Empowering Businesses with Data.
